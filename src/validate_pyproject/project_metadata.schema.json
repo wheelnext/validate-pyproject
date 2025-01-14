@@ -221,6 +221,11 @@
       "description": "Project (mandatory) dependencies.",
       "items": {"$ref": "#/definitions/dependency"}
     },
+    "default-optional-dependencies": {
+      "type": "array",
+      "description": "Project default \"optional-dependencies\" environments.",
+      "items": {"$ref": "#/definitions/dependency"}
+    },
     "optional-dependencies": {
       "type": "object",
       "description": "Optional dependency for the project",
@@ -256,6 +261,7 @@
           "gui-scripts",
           "entry-points",
           "dependencies",
+          "default-optional-dependencies",
           "optional-dependencies"
         ]
       }
